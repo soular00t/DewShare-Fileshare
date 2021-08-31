@@ -1,0 +1,252 @@
+/*ANIMATIONS & BASIC STRUCTURE*/
+@font-face{ 
+	font-family:"Conduit ITC"; 
+	src:url('/src/fonts/Conduit ITC Light.woff');
+}
+@keyframes slideInFromLeft {
+  0% { transform:translateX(-100%); }
+  100% { transform:translateX(0); }
+}
+* {
+    margin:0;
+    padding:0;
+    font-family:"Conduit ITC";
+    -webkit-user-select:none;
+    user-select:none;
+    -webkit-font-smoothing:antialiased;
+}
+html {
+    color:#FFF;
+    zoom:0.85;
+}
+html:before {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+head {
+    display:none;
+}
+body {
+    padding:5%;
+    box-sizing:border-box;
+}
+a {
+	color:#0C5A8E;
+	text-decoration:none;
+}
+a:hover {
+	color:#2173A9;
+	text-decoration:none;
+}
+
+/* UPLOADER & LOGIN FORM STYLING */
+input[type='file'] {
+  color:rgba(255,255,255,0.5);
+  font-style:italic;
+}
+input.orange {
+	background:rgba(220,134,75,0.7)!important;
+	color:white!important;
+	border:none!important;
+	padding:4px!important;
+	text-align:center!important;
+}
+table.uploadDetails {    
+    -webkit-transition:width 2s; /* Safari */
+    transition:width 2s;
+	background-color:rgba(37, 53, 76, 0.8);
+	background:linear-gradient(rgba(37, 53, 76, 0.9), rgba(21, 30, 39, 0.9));
+	border:1px solid rgba(220,134,75,0.7); 
+	border-top-left-radius:30px; 
+	border-bottom-right-radius:30px; 
+	box-shadow:0px 0px 45px rgba(0,0,0,0.7); 
+	width:55%;
+	max-width:1100px;
+	margin:auto;
+	position:absolute;
+	animation:1s ease-out 0s 1 slideInFromLeft;
+	left:0;
+	bottom:0;
+	right:0;
+	top:0;
+	color:white;
+	min-height:200px;
+}
+table.uploader {    
+    -webkit-transition:width 2s; /* Safari */
+    transition:width 2s;
+	background-color:rgba(37, 53, 76, 0.7);
+    background:linear-gradient(rgba(37, 53, 76, 0.9), rgba(21, 30, 39, 0.9));
+	border:1px solid rgba(220,134,75,0.7); 
+	border-top-left-radius:30px; 
+	border-bottom-right-radius:30px; 
+	box-shadow:0px 0px 45px rgba(0,0,0,0.7); 
+	width:55%;
+	max-width:1100px;
+	margin:auto;
+	position:absolute;
+	animation:1s ease-out 0s 1 slideInFromLeft;
+	left:0;
+	bottom:0;
+	right:0;
+	top:0;
+	color:white;
+	min-height:200px;
+}
+table.loginForm {    
+    -webkit-transition:width 2s; /* Safari */
+    background-color:rgba(37, 53, 76, 0.7);
+    background:linear-gradient(rgba(37, 53, 76, 0.9), rgba(21, 30, 39, 0.9));
+	border:1px solid rgba(220,134,75,0.7); 
+	border-top-left-radius:30px; 
+	border-bottom-right-radius:30px; 
+	box-shadow:0px 0px 45px rgba(0,0,0,0.7); 
+	width:25%;
+	min-width:400px;
+	margin:auto;
+	position:absolute;
+	animation:1s ease-out 0s 1 slideInFromLeft;
+	left:0;
+	bottom:0;
+	right:0;
+	top:0;
+	color:white;
+	min-height:200px;
+	text-align:center;
+}
+.loginForm input[type="text"], .loginForm input[type="password"] {
+	border:1px solid rgba(220,134,75,0.7); 
+	padding:5px;
+    background:linear-gradient(rgba(37, 53, 76, 0.9), rgba(21, 30, 39, 0.9));
+    color:rgba(220,134,75,0.6); -webkit-text-fill-color:rgba(220,134,75,0.6);
+    display:inline;
+    width:80%;
+    margin:0 auto;
+}
+.loginForm p {
+	padding:8px;
+	max-width:70%;
+}
+table.uploadDetails tr {
+	vertical-align::center;
+}
+	td.leftDetails {
+		text-align:center;
+		border:0;
+		/*background:linear-gradient(rgba(21, 30, 39, 0.7), rgba(37, 53, 76, 0.5));*/
+		border-top-left-radius:30px; 
+	}
+		.leftDetails .topLeftDetails {
+			display:inline-flex;
+			align-items:center;
+			justify-content:space-between;
+			min-width:90%; 
+			text-align:center;
+			margin:3%;
+			margin-left:5%;
+			border-radius:inherit;
+			min-height:90%;
+		}
+		td.leftDetails img.mapImg {
+			box-shadow:0px 0px 10px rgba(0,0,0,.6); 
+			align:bottom; 
+			display:block; 
+			margin:0 auto; 
+			margin-bottom:3%;
+			border-top-left-radius:30px; 
+			border-bottom-right-radius:30px; 
+			width:90%;
+		}
+	td.rightDetails {
+		min-height:100%;
+		box-shadow:-9px 0 9px -5px rgba(0,0,0,0.5); 
+		color:white;
+		background:linear-gradient(rgba(21, 30, 39, 0.9), rgba(37, 53, 76, 0.9));
+		border-top-left-radius:30px; 
+		border-bottom-right-radius:30px; 
+	}
+		.rightDetails input[type='text'] {
+			background:transparent;
+			border:none;
+			display:inline;
+			font-family:inherit;
+			font-size:inherit;
+			padding:none;
+			float:right;
+			width:50%;
+			text-align:right;
+			color:inherit;
+		}
+		input#imgurl { 
+			background:transparent;
+			border:none;
+			display:inline;
+			font-family:inherit;
+			font-size:inherit;
+			float:center;
+			padding:5px;
+			width:70%!important; 
+			text-align:center!important;  
+		}
+		.rightDetails select { 
+			text-align:right!important;
+			background:transparent;
+			border:none;
+			display:inline;
+			font-family:inherit;
+			font-size:inherit;
+			padding:none;
+			float:right;
+			color:inherit;
+		}	
+		.rightDetails select option {
+			background:rgba(0,0,0,0.5)!important;
+			color:white!important;
+			text-align:right!important;
+		}
+		.rightDetails textarea {
+			background:transparent;
+			border:none;
+			border:1px solid rgba(220,134,75,0.1); 
+			border-radius:15px; 
+			display:inline;
+			font-family:inherit;
+			font-size:inherit;
+			padding:none;
+			width:96%;
+			height:60px;
+			color:inherit;   
+			font-style:italic;
+			background:transparent right bottom no-repeat;
+			background-size:70px 70px;
+			/* Firefox:https://developer.mozilla.org/en/docs/Web/CSS/overflow */
+	   		/* overflow:-moz-scrollbars-none; (no longer works) */
+	   		/* IE:https://msdn.microsoft.com/en-us/library/hh771902(v=vs.85).aspx */
+	    	-ms-overflow-style:none;
+		}
+		.rightDetails textarea::-webkit-scrollbar {
+	    /* Chrome:https://css-tricks.com/custom-scrollbars-in-webkit/ */
+	    display:none;
+		}
+		td.rightDetails ul {
+			display:block;
+			margin:0 auto;
+			margin-left:10%;
+			float:center;
+			list-style:none;
+		}
+			td.rightDetails ul li {
+				padding:10px;
+				border-top:1px solid rgba(225,225,225,0.1);
+				width:80%;
+				height:auto;
+				overflow:hidden;
+			}
+			td.rightDetails ul li:hover {
+	            background:linear-gradient(rgba(220,134,75,.7), rgba(220,134,75,.6))!important;
+			}
+			td.rightDetails ul li:first-child { border-top-left-radius:30px; border-top:0; }
+			td.rightDetails ul li:last-child { border-bottom-right-radius:30px; border-bottom:0; }

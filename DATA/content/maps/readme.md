@@ -1,0 +1,1 @@
+basic directory structure for UNRENCRYPTED & already uploaded HaloVault maps prior to DewShare

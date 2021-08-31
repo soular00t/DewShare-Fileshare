@@ -1,0 +1,1 @@
+basic directory structure for UNRENCRYPTED & already uploaded HaloVault gametypes prior to DewShare
