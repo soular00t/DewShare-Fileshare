@@ -1,3 +1,3 @@
 # README #
 
-Not intended for public use. This is the backend code for the fileshare overlay in 0.6 ElDewrito mod for Halo Online
+Incomplete Fileshare overlay created for ElDewrito 0.6 via HaloVault. Created by Twigzie & TheDarkConduit in 2018
